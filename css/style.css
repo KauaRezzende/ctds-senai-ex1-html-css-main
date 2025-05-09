@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo as variaveis */
+:root {
+    --background-body: #f9f9f9;
+    --background-header: #1f2937;
+    --background-card: #ffff;
+    --background-footer: #1f2937;
+    --color-body: #333;
+    --color-Header: #ffff;
+    --color-preco: #1f2937;
+    --color-footer: #ffff;
+}
+
+/* Fim da definição de variavel */
+
+
+
+/* Começo do cabeçalho */
+
+header {
+    background-color: var(--background-header);
+    color: var(--color-Header);
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+/* Final do cabeçalho */
+
+
+
+
+
+/* Começo do corpo */
+body {
+    background-color: var(--background-body);
+    color: var(--color-body);
+    font-family: 'Poppins';
+}
+
+.card {
+    background-color: var(--background-card);
+}
+
+
+img {
+    width: 300px;
+    
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: o.95rem;
+    text-align: center;
+    padding: 15px 0;
+    
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.preco {
+    color: var(--color-preco);
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Final do corpo */
+
+
+/* Começo do rodapé */
+
+footer {
+    background-color: var(--background-footer);
+    color: var(--color-footer);
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+/* Final do Rodapé */
+@media (max-width: 600px) {
+
+    .card {
+
+        width: 90%;
+
+    }
+
+    h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+}
